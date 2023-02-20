@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div><img src="assets/halie-west-25xggax4bSA-unsplash.jpg" alt="green"></div>
+    <form action="" method="post">
+        <header>
+            <h2>
+                This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams. Sign up now to get started.
+                You know you want to.
+            </h2>
+        </header>
+        <div class="form-row">
+            <label for="fName">
+                FIRST NAME
+                <input type="text" id="fName" name="firstName" required maxlength="20" minlength="2">
+            </label>
+            <label for="lName">
+                LAST NAME
+                <input type="text" id="lName" name="lastName" required maxlength="20" minlength="2">
+            </label>
+        </div>
+        <div class="form-row">
+            <label for="email">
+                EMAIL
+                <input type="email" id="email" name="email" required>
+            </label>
+            <label for="phone">
+                PHONE NUMBER
+                <input type="text" id="phone" name="phone" inputmode="numeric" pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                    placeholder="123-456-7890">
+            </label>
+        </div>
+        <div class="form-row">
+            <label for="password">
+                PASSWORD
+                <input type="password" id="password" name="password" required
+                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                    title="Needs at least one uppercase, lowercase, number and a minimum of 8 chars">
+            </label>
+        </div>
+        <button type="submit">Create Account</button>
+    </form>
+</body>
+
+</html>

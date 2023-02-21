@@ -1,5 +1,10 @@
 @import url(reset.css);
 
+@font-face {
+    font-family: NorseBold;
+    src: url("assets/Norse-Bold.otf") format("opentype");
+}
+
 *{
     font-family: Helvetica, sans-serif;
 }
@@ -122,6 +127,22 @@ p a{
     color: #596D48;
     font-weight: bold;
     text-decoration: none;
+}
+
+.name{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    text-align: center;
+    margin-top: 15rem;
+    font-family: NorseBold;
+    font-size: 8rem;
+    padding: 2rem;
+}
+
+.name img{
+    width: 100px;
+    position: relative;
+    top: 15px;
 }
 
 h2 span{
